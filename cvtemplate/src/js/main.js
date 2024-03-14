@@ -173,19 +173,19 @@
      * Initiate portfolio lightbox 
      */
     // const portfolioLightbox = GLightbox({
-    //   selector: '.portfolio-lightbox'
-    // });
+    //    selector: '.portfolio-lightbox'
+    //  });
 
     /**
      * Testimonials slider
      */
-    // new Swiper('.testimonials-slider', {
-    //   speed: 600,
-    //   loop: true,
-    //   autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false
-    //   },
+    //  new Swiper('.testimonials-slider', {
+    //    speed: 600,
+    //    loop: true,
+    //    autoplay: {
+    //      delay: 5000,
+    //      disableOnInteraction: false
+    //    }
     //   slidesPerView: 'auto',
     //   pagination: {
     //     el: '.swiper-pagination',
@@ -226,4 +226,21 @@
      */
     // new PureCounter();
 
-})()
+})();
+// Validare
+
+(function () {
+    'use strict'
+    const forms = document.querySelectorAll('.requires-validation')
+    Array.from(forms)
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+})();
