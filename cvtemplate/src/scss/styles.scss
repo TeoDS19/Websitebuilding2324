@@ -50,12 +50,12 @@ $progressbar-title-color: #fff;
 
 $background-color_1: #ffffff;
 $background-color_2: $color_3;
-$background-color_3: $color_2;
+$background-color_3: $color_4;
 $background-color_4: #0062d3;
 $background-color_6: #1a1a1a;
-$background-color_7: #1a1a1a;
+$background-color_7: #00000058;
 $background-color_8: #1a1a1a;
-$background-color_9: #1a1a1a;
+$background-color_9: #ffffff;
 $background-color_5: transparent;
 
 $li-padding: 5px;
@@ -77,6 +77,7 @@ $dm-text-color-secondary: rgba(256, 256, 256, 0.7);
 
 //*************************** Theme Styles ****************************/
 // Import theme styles
+@import "../../node_modules/glightbox/dist/css/glightbox.min.css";
 
 @import "general";
 @import "base";
@@ -85,6 +86,7 @@ $dm-text-color-secondary: rgba(256, 256, 256, 0.7);
 @import "social";
 @import "about";
 @import "experience";
+@import "portfolio";
 @import "contact";
 @import "footer";
 
