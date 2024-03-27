@@ -6,6 +6,7 @@ const autoprefixer = require('autoprefixer')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const miniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 const paths = {
     /* Path to source files directory */
     source: path.resolve(__dirname, './src/'),
@@ -16,11 +17,13 @@ const favicon = path.resolve(paths.source, 'images', 'favicon.ico');
 const myHeader = fs.readFileSync(paths.source + '/views/header.html');
 const myBanner = fs.readFileSync(paths.source + '/views/banner.html');
 const myAbout = fs.readFileSync(paths.source + '/views/about.html');
-const myExperience=fs.readFileSync(paths.source+'/views/experience.html');
-const myPortfolio=fs.readFileSync(paths.source+'/views/portfolio.html');
+const myExp = fs.readFileSync(paths.source + '/views/experience.html');
+const myPort = fs.readFileSync(paths.source + '/views/portfolio.html');
+const myGHA = fs.readFileSync(paths.source + '/views/githubapi.html');
 const myContact = fs.readFileSync(paths.source + '/views/contact.html');
 const myFooter = fs.readFileSync(paths.source + '/views/footer.html');
 module.exports = {
+
     stats: {
         errorDetails: true,
         children: true
@@ -39,8 +42,9 @@ module.exports = {
             myHeader: myHeader,
             myBanner: myBanner,
             myAbout: myAbout,
-            myExperience:myExperience,
-            myPortfolio:myPortfolio,
+            myExperience: myExp,
+            myPortfolio: myPort,
+            myGitHubApi: myGHA,
             myContact: myContact,
             myFooter: myFooter,
             template: './src/index.html',
@@ -70,6 +74,7 @@ module.exports = {
                 // },
             ],
         }),
+
     ],
     module: {
         rules: [

@@ -25,42 +25,42 @@ $bootstrap-icons-font-dir: "~bootstrap-icons/font/fonts";
 
 $font-family_1: "Roboto", Helvetica, Arial, sans-serif;
 $font-family_2: "Montserrat", sans-serif;
+$animation-delay: 0.7s;
+$progressbar-title-color: #fff;
+$li-padding: 5px;
 
-$color_1: #4e4e4e;
-$color_2: #1a1a1a;
-$color_3: #cc005f;
-$color_4: #f5f5f5;
-$color_5: #075b35;
-$color_6: #0062d3;
 $red: #c0392b;
 $blue: #075997;
 $purple: #9b59b6;
 $orange: #ffa500;
-$green: $color_5;
+$green: #03844a;
+
 $reactColor: rgb(20 158 202/0.7);
 $vueColor: #42b883;
 $angularColor: #f9174d;
-$animation-delay: 0.7s;
 
-$border-color_1: rgba(255, 255, 255, 0.3);
-$border-color_2: $vueColor;
-$border-top-color_1: #eee;
-
-$progressbar-title-color: #fff;
-
-$background-color_1: #ffffff;
-$background-color_2: $color_3;
-$background-color_3: $color_4;
-$background-color_4: #0062d3;
-$background-color_6: #1a1a1a;
-$background-color_7: #00000058;
-$background-color_8: #1a1a1a;
-$background-color_9: #ffffff;
-$background-color_5: transparent;
-
-$li-padding: 5px;
 $btn-color: $vueColor;
 $btn-color-2: $reactColor;
+
+
+$border-top-color_1: #eee;
+$color_1: #4e4e4e;
+$color_2: #1e1e1e;
+$color_3: #cc005f;
+$color_4: #f5f5f5;
+$color_5: #fff;
+$color_6: #cde1f8;
+$background-color_1: #f5f5f5;
+$background-color_2: #cc005f;
+$background-color_3: #fff;
+$background-color_4: #cde1f8;
+$background-color_5: #1b1b1b;
+$background-color_6: #0062d3;
+$background-color_7: rgba(0, 0, 0, 0.6);
+$background-color_8: transparent;
+$background-color_9: rgba(255, 255, 255, 0.4);
+$border-color_1: #cde1f8;
+$border-color_2: #cc005f;
 $text-color: #434343;
 $text-color-secondary: #666;
 $grey: #999;
@@ -75,10 +75,11 @@ $dm-background: #17191c;
 $dm-text-color: rgba(256, 256, 256, 0.9);
 $dm-text-color-secondary: rgba(256, 256, 256, 0.7);
 
-//*************************** Theme Styles ****************************/
-// Import theme styles
 @import "../../node_modules/glightbox/dist/css/glightbox.min.css";
 
+//*************************** Theme Styles ****************************/
+// Import theme styles
+// @import "darkmode";
 @import "general";
 @import "base";
 @import "header";
@@ -87,9 +88,6 @@ $dm-text-color-secondary: rgba(256, 256, 256, 0.7);
 @import "about";
 @import "experience";
 @import "portfolio";
+@import "githubapi";
 @import "contact";
 @import "footer";
-
-// @import "dark-mode";
-
-@import "tot";
