@@ -7,7 +7,8 @@ async function fetchLanguageData(lang) {
 // Function to set the language preference
 function setLanguagePreference(lang) {
     localStorage.setItem('language', lang);
-    location.reload();
+
+    //location.reload();
 }
 
 // Function to update content based on selected language
@@ -16,6 +17,11 @@ function updateContent(langData) {
         const key = element.getAttribute('data-tr');
         element.textContent = langData[key];
     });
+    document.querySelectorAll('[data-typed-tr]').forEach(element => {
+        const key = element.getAttribute('data-typed-tr');
+        element.setAttribute('data-typed-items', langData[key]);
+    });
+
 
 }
 
@@ -38,7 +44,9 @@ window.changeLanguage = function (lang) {
 // Call updateContent() on page load
 window.addEventListener('DOMContentLoaded', async () => {
     const userPreferredLanguage = localStorage.getItem('language') || 'en';
+    console.log('limba aleasa2', userPreferredLanguage);
     document.documentElement.setAttribute('lang', userPreferredLanguage);
+    document.querySelector('[data-id= "' + userPreferredLanguage + '"]').classList.add('active');
     const langData = await fetchLanguageData(userPreferredLanguage);
     updateContent(langData);
 

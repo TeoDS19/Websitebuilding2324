@@ -1,1 +1,12 @@
-{"title":"WebSite Building Bootstrap + Webpack","meniu.home":"Home","meniu.about":"About","meniu.work":"Work","meniu.portofolio":"Portfolio","meniu.blog":"Blog","meniu.contact":"Contact"}
+{
+    "title": "WebSite Building Bootstrap + Webpack",
+    "meniu.home": "Home",
+    "meniu.about": "About",
+    "meniu.cv": "My CV/Resume",
+    "meniu.portfolio": "Portfolio",
+    "meniu.github": "My GitHub",
+    "meniu.contact": "Contact",
+    "home": "Hello, world!",
+    "name": "I am Teo",
+    "typed": "Teacher, Mentor, Developer, Freelancer, Designer"
+}

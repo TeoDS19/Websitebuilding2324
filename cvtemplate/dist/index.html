@@ -5,25 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-tr="title">WebSite Building Bootstrap + Webpack</title>
-<link rel="icon" href="favicon.ico?06e396c2c3c773c124a2"><link href="css/main.css?06e396c2c3c773c124a2" rel="stylesheet"></head>
+<link rel="icon" href="favicon.ico?5b36a75579c35e3abef1"><link href="css/main.css?5b36a75579c35e3abef1" rel="stylesheet"></head>
 
 <body>
     <!-- ======= Header ======= -->
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-        <!-- <h1 class="logo"><a href="index.html">DevFolio</a></h1> -->
+        <!-- <h1 class="logo"><a href="index.html">AAdiaconitei</a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html" class="logo"><img src="images/logo.png" alt="" class="img-fluid"></a>
+        <a href="index.html" class="logo"><img id="img-fluid" src="images/logo-color.png" alt="Adrian Adiaconitei"
+                class="img-fluid"></a>
 
         <nav id="navbar" class="navbar">
             <ul>
                 <li><a class="nav-link scrollto active" href="#hero" data-tr="meniu.home">Home</a></li>
                 <li><a class="nav-link scrollto" href="#about" data-tr="meniu.about">About</a></li>
-                <li><a class="nav-link scrollto " href="#resume" data-tr="meniu.work">Work</a></li>
-                <li><a class="nav-link scrollto" href="#portofolio" data-tr="meniu.portofolio">Portfolio</a></li>
-               
-                <li><a class="nav-link scrollto " href="#blog" data-tr="meniu.blog">Blog</a></li>
+                <li><a class="nav-link scrollto " href="#resume" data-tr="meniu.cv">My CV/Resume</a></li>
+                <li><a class="nav-link scrollto" href="#portfolio" data-tr="meniu.portfolio">Portfolio</a></li>
+                <li><a class="nav-link scrollto " href="#repo" data-tr="meniu.github">My GitHub</a></li>
                 <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
                         <li><a href="#">Drop Down 1</a></li>
@@ -44,7 +44,15 @@
                 </li> -->
                 <li><a class="nav-link scrollto" href="#contact" data-tr="meniu.contact">Contact</a></li>
             </ul>
+            <div class="dark-mode-toggle">
+                <i id="darkModeIcon" class="bi bi-moon"></i>
+            </div>
             <i class="bi bi-list mobile-nav-toggle"></i>
+            <ul>
+
+                <li><a data-id="en" href="index.html" onclick="window.changeLanguage('en')">English</a></li>
+                <li><a data-id="ro" href="index.html" onclick="window.changeLanguage('ro')">Romana</a></li>
+            </ul>
         </nav><!-- .navbar -->
 
     </div>
@@ -57,9 +65,9 @@
     <div class="hero-content display-table">
         <div class="table-cell">
             <div class="container">
-                <p class="display-6 color-d">Hello, world!</p>
-                <h1 class="hero-title mb-4">I am Teo</h1>
-                <p class="hero-subtitle"><span class="typed"
+                <p class="display-6 color-d" data-tr="home">Hello, world!</p>
+                <h1 class="hero-title mb-4" data-tr="name">I am Teo</h1>
+                <p class="hero-subtitle"><span class="typed" id="typed"  data-typed-tr="typed" 
                         data-typed-items="Teacher, Mentor, Developer, Freelancer, Designer"></span></p>
                 <ul class="list-inline list-social">
                     <li>
@@ -778,6 +786,6 @@
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
         class="bi bi-arrow-up-short"></i></a>
 
-<script defer src="js/main.bundle.js?06e396c2c3c773c124a2"></script></body>
+<script defer src="js/main.bundle.js?5b36a75579c35e3abef1"></script></body>
 
 </html>
